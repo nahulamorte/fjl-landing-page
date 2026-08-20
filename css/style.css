@@ -5,7 +5,7 @@
 }
 
 :root {
-    --bg-primary: #22396B
+    --bg-primary: #22396B;
     --bg-secondary: #4570BA;
     --bg-cards: #131F34;
     --bg-secondary: #070B13;
@@ -16,6 +16,8 @@
 
     --font-color-primary: #EAB308;
     --font-color-secondary: #F8FAFC;
+
+    --color-neutral: #D3D3D3;
  
     --spacing-sm: 8px;
     --spacing-md: 16px;
@@ -26,5 +28,29 @@
     --radius-card: 8px;
     --radius-button: 4px;
     --icon-size: 32px;
-    --logo-size: 202
+    --logo-size: 101px;
 }
+
+header {
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-neutral);
+}
+
+.logo-text,
+.location-text{
+    font-family: var(--font-headings);
+    color: var(--font-color-primary);
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin: var(--spacing-md);
+}
+
+.logo{
+    width: var(--logo-size);
+    height: var(--logo-size);
+}
+
