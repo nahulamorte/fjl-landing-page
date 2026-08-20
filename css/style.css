@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #22396B
+    --bg-secondary: #4570BA;
+    --bg-cards: #131F34;
+    --bg-secondary: #070B13;
+
+    --font-headings: 'Eb Garamond', Serif;
+    --font-body: 'Inter', sans-serif; 
+    --font-cards: 'Inter', bricolage grotesque, sans-serif;
+
+    --font-color-primary: #EAB308;
+    --font-color-secondary: #F8FAFC;
+ 
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+
+    --radius-card: 8px;
+    --radius-button: 4px;
+    --icon-size: 32px;
+    --logo-size: 202
+}
