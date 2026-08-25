@@ -5,14 +5,17 @@
 }
 
 :root {
-    --bg-primary: #22396B;
+    --bg-primary: #111D36;
     --bg-secondary: #4570BA;
-    --bg-cards: #131F34;
-    --bg-secondary: #070B13;
+    --bg-cards-primary: #283758;
+    --bg-cards-secondary: #22396B;
+    --bg-third: #070B13;
 
-    --font-headings: 'Eb Garamond', Serif;
-    --font-body: 'Inter', sans-serif; 
-    --font-cards: 'Inter', bricolage grotesque, sans-serif;
+    --font-headings: 'Eb Garamond', serif;
+    --font-test: "Segoe UI", Roboto, Helvetica, sans-serif;
+    --font-body: 'Inter', Helvetica, sans-serif; 
+    --font-card-title: 'Montserrat', sans-serif;
+    --font-card-body: 'Roboto', sans-serif;    
 
     --font-color-primary: #EAB308;
     --font-color-secondary: #F8FAFC;
@@ -48,7 +51,7 @@ header {
 
 .logo-text,
 .location-text{
-    font-family: var(--font-headings);
+    font-family: var(--font-test);
     color: var(--font-color-primary);
     font-weight: 800;
     font-size: 2.5rem;
@@ -77,7 +80,6 @@ header {
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
-    padding
 }
 
 .presentation-text {
@@ -89,4 +91,55 @@ header {
     margin-bottom: var(--spacing-xxl);
 }
 
+.licors {
+    display: grid;
+    /* Usamos auto-fit para que sea responsivo, o tu repeat(3, 1fr) si prefieres 3 fijas */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl); /* El Grid controla la separación, NO el margin de la card */
+    padding: var(--spacing-xxl) 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+/* 2. LA TARJETA INDIVIDUAL */
+.licor-card {
+    background-color: var(--bg-cards-primary);
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid var(--color-neutral);
+    border-radius: var(--radius-card); 
+    overflow: hidden; 
+    
+}
+
+.licor-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-info {
+    background-color: var(--bg-cards-secondary);
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    padding: var(--spacing-md); 
+    gap: var(--spacing-sm);
+}
+
+.licor-name {
+    font-family: var(--font-card-title);
+    color: var(--font-color-primary);
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.licor-description {
+    font-family: var(--font-card-body);
+    color: var(--font-color-secondary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0; 
+}
