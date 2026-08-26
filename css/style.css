@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden; 
+    width: 100%;
+}
+
 :root {
     --bg-primary: #111D36;
     --bg-secondary: #4570BA;
@@ -12,7 +17,7 @@
     --bg-third: #070B13;
 
     --font-headings: 'Eb Garamond', serif;
-    --font-test: "Segoe UI", Roboto, Helvetica, sans-serif;
+    --font-logo: "Segoe UI", Roboto, Helvetica, sans-serif;
     --font-body: 'Inter', Helvetica, sans-serif; 
     --font-card-title: 'Montserrat', sans-serif;
     --font-card-body: 'Roboto', sans-serif;    
@@ -51,7 +56,7 @@ header {
 
 .logo-text,
 .location-text{
-    font-family: var(--font-test);
+    font-family: var(--font-logo);
     color: var(--font-color-primary);
     font-weight: 800;
     font-size: 2.5rem;
@@ -172,3 +177,80 @@ header {
     line-height: 1.6;  
     margin: 0;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-footer,
+.contact-name,
+small,
+a {
+    color: var(--font-color-primary);
+}
+
+.footer-logo-container{
+    display: flex;
+    margin: var(--spacing-md);
+    padding: var(--spacing-md);
+}
+
+.logo-footer{
+    font-family: var(--font-logo);
+    font-weight: 800;
+    font-size: 1.1rem;
+    
+}
+
+small {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacing-lg);
+    gap: var(--spacing-sm);
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.contact-item a {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: var(--spacing-sm);
+    
+   
+    text-decoration: none; 
+    color: var(--font-color-primary); 
+    font-weight: 600;
+    transition: opacity 0.2s ease; 
+}
+
+.contact-item svg {
+    color: var(--font-color-primary);
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.contact-name {
+    margin: 0; 
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
