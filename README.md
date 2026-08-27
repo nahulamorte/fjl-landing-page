@@ -40,24 +40,7 @@ artesanal de la marca y ofrece sus canales de contacto.
 
 ## Ejecución local
 
-Como los recursos se referencian desde `/css` y `/assets`, se recomienda
-servir el proyecto mediante un servidor HTTP local en lugar de abrir
-`index.html` directamente.
-
-### Con Python
-
-Desde la raíz del proyecto:
-
-```bash
-python -m http.server 8000
-```
-
-Luego, abrir [http://localhost:8000](http://localhost:8000) en el navegador.
-
-### Con Visual Studio Code
-
-También se puede utilizar cualquier extensión de servidor local, como
-**Live Server**, iniciándola sobre `index.html`.
+Enlace a la pagina: https://nahulamorte.github.io/fjl-landing-page/
 
 ## Personalización
 
